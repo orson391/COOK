@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+<div class="loader-wrapper">
+      <span class="loader"><span class="loader-inner"></span></span>
+    </div>
     <header>
         <nav>
             <ul>
@@ -33,6 +36,9 @@
         </div>
     </main>
     <script src="script.js"></script>
+$(window).on("load",function(){
+          $(".loader-wrapper").fadeOut("slow");
+        });
     
 </body>
 </html>
