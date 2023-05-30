@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css?family=Amatic+SC");
+body{
+    font-family: "Amatic SC";
+    background: url(pix.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.con{
+    font-family: "Amatic SC";
+    font-size: 6vh;
+    opacity: 0.75;
+    animation: pulse 2.5s linear infinite;
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      color: rgb(85, 198, 230);
+      text-shadow: 1px 1px 0 black,
+                   -1px -1px 0 black,
+                   1px -1px 0 black,
+                   -1px 1px 0 black;
+      bottom: 0;
+      display: flex;
+      justify-content: center;
+      align-items:end;
+  }
+  @keyframes pulse {
+    0% {
+      transform: scale(1, 1);
+      opacity: 0.25;
+    }
+    50% {
+      transform: scale(1.2, 1);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1, 1);
+      opacity: 0.25;
+    }
+  }
+.c1{
+    position: absolute;
+  top: 120px;
+    
+}
+
+
+.search-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+  }
+
+  .search-box {
+    display: flex;
+    align-items: center;
+    width: 400px;
+    height: 40px;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .search-box input[type="text"] {
+    flex: 1;
+    height: 100%;
+    border: none;
+    padding: 0 15px;
+    font-size: 16px;
+    background-color: transparent;
+    color: #555;
+  }
+
+  .search-box button {
+    height: 100%;
+    width: 60px;
+    background-color: #4CAF50;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: white;
+  }
