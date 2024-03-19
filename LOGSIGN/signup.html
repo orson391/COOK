@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <style>
+        body {
+            font-family: "Amatic SC", cursive;
+            margin: 0;
+            padding: 0;
+            background: url(signup.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .signup-container {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        .signup-container h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .signup-container form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .signup-container input[type="text"],
+        .signup-container input[type="password"] {
+            width: 300px;
+            height: 40px;
+            margin-bottom: 15px;
+            padding: 0 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            background-color: #f9f9f9;
+            transition: border-color 0.3s ease;
+        }
+
+        .signup-container input[type="text"]:focus,
+        .signup-container input[type="password"]:focus {
+            border-color: #FF6F61;
+        }
+
+        .signup-container button {
+            width: 150px;
+            height: 40px;
+            border: none;
+            border-radius: 5px;
+            background-color: #FF6F61;
+            color: #fff;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .signup-container button:hover {
+            background-color: #E4572E;
+        }
+        .toggle-link {
+            margin-top: 20px;
+            font-size: 1.1rem;
+            color: #333;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .toggle-link:hover {
+            color: #FF6F61;
+        }
+    </style>
+</head>
+<body>
+    <div class="signup-container">
+        <h2>Signup</h2>
+        <form action="signup.php" method="post">
+            <input type="text" name="username" placeholder="Username">
+            <input type="text" name="email" placeholder="Email">
+            <input type="password" name="password" placeholder="Password">
+            <input type="password" name="confirm_password" placeholder="Confirm Password">
+            <button type="submit">Signup</button>
+        </form>
+        <a href="login.html" class="toggle-link">Already have an account? Login</a>
+    </div>
+</body>
+</html>
