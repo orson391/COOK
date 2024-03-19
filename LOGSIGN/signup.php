@@ -28,7 +28,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $insert_stmt->bind_param("sss", $username, $email,$hashed_password);
 
     if ($insert_stmt->execute()) {
-        header("Location: /COOK/MENU/index.html");
+        header("Location: /COOK/MENU/index.php");
         exit;
     } else {
         echo "Error registering user!";

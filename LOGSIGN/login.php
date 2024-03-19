@@ -21,7 +21,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $_SESSION['username'] = $username; 
             
 
-            header("Location: /COOK/MENU/index.html");
+            header("Location: /COOK/MENU/index.php");
             exit;
         } else {
             echo "Incorrect password!";
